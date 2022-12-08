@@ -1,0 +1,26 @@
+{% extends "main.html" %}
+
+{% block content %}  
+    <!--Django Form-->
+    <h2>Upload your image</h2>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{form.as_p}}
+        <button type="submit">Submit</button>
+    </form>
+
+    <!--Django Model-->
+    <br>
+    {% for m in image %}
+    <img src="{{ m.image.url }}" height= 200 px>
+    <p>Status: {{status}}</p>
+    <p>Category: {{category}}</p>
+    <!-- <a href="/media/{{m.file}}">View Script</a> -->
+    {% empty %}
+    <p>No image uploaded</p>
+    {% endfor %}
+
+
+    
+
+{% endblock %}
