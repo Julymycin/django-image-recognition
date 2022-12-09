@@ -17,7 +17,7 @@ Therefore, we'd like to implement an image-recognition service, which can classi
 
 ## 2.1 Setup diagram
 
-![Picture1](C:\Users\Marcus\Documents\CS655\Picture1.png)
+![Picture1](./pics/Picture1.png)
 
 As shown in the picture, it shows how the server works when a user posts an image to the server through a browser, our server is built by `python` and `Django`. 
 
