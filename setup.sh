@@ -16,11 +16,5 @@ conda activate cs655
 conda install -c conda-forge djangorestframework
 conda install pytorch torchvision torchaudio cpuonly -c pytorch
 
-# git clone the repo
-git clone https://github.com/Julymycin/django-image-recognition.git
-
-# enter the folder
-cd django-image-recognition
-
 # run the server
 python manage.py runserver 0.0.0.0:8000
