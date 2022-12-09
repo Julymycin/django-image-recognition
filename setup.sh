@@ -6,6 +6,8 @@ wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 # Install Miniconda
 bash Miniconda3-latest-Linux-x86_64.sh
 
+source ~/.bashrc
+
 # Create a new conda environment named "my_env" with Python 3.7
 conda create -n cs655 django
 
